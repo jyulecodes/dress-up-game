@@ -34,8 +34,8 @@ class MenuSidebar extends StatelessWidget {
       },
       buttonSize: buttonSize,
       buttonImage: Container(
-        color: Colors.deepPurpleAccent,
-        child: Icon(Icons.not_interested),
+        color: buttonAccent,
+        child: Icon(Icons.not_interested, size: 40, color: Colors.white,),
       ),
     ));
 
@@ -47,7 +47,7 @@ class MenuSidebar extends StatelessWidget {
         },
         buttonSize: buttonSize,
         buttonImage: Container(
-          color: Colors.deepPurple,
+          color: buttonPurple,
           child: menuIcons![i],
         ),
       );

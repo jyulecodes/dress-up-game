@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 const double smallPadding = 5.0;
 const double largePadding = 10.0;
+
+Color get buttonPurple => HexColor('a04492');
+Color get buttonAccent => HexColor('e36196');
 
 List<Image> get topsList => const [
       Image(image: AssetImage('assets/tops/t_shirt.png')),
@@ -14,14 +18,19 @@ List<Image> get topsList => const [
 
 List<Image> get secondLayerList => const [
       Image(image: AssetImage('assets/second_layer/jumper.png')),
+      Image(image: AssetImage('assets/second_layer/jumper_cow.png')),
       Image(image: AssetImage('assets/second_layer/long_sleeve.png')),
-      Image(image: AssetImage('assets/second_layer/short_sleeve.png'))
+      Image(image: AssetImage('assets/second_layer/long_sleeve_sheer.png')),
+      Image(image: AssetImage('assets/second_layer/short_sleeve.png')),
+      Image(image: AssetImage('assets/second_layer/short_sleeve_stripe.png'))
     ];
 
 List<Image> get outerwearList => const [
       Image(image: AssetImage('assets/outerwear/denim_jacket.png')),
       Image(image: AssetImage('assets/outerwear/fur_coat.png')),
       Image(image: AssetImage('assets/outerwear/cardigan.png')),
+      Image(image: AssetImage('assets/outerwear/cowboy.png')),
+      Image(image: AssetImage('assets/outerwear/leather.png')),
     ];
 
 List<Image> get trousersList => const [
@@ -45,22 +54,26 @@ List<Image> get topsIconList => const [
       Image(image: AssetImage('assets/icons/t_shirt_stripe_icon.png')),
       Image(image: AssetImage('assets/icons/buttonup_icon.png')),
       Image(image: AssetImage('assets/icons/turtleneck_icon.png')),
-      Image(image: AssetImage('assets/icons/turtleneck_white_icon.png'))
+      Image(image: AssetImage('assets/icons/turtleneck_white_icon.png')),
+      Image(image: AssetImage('assets/icons/vest.png'))
     ];
 
 List<Image> get secondLayerIconList => const [
-      Image(image: AssetImage('assets/icons/jumper_icon.png')),
-      Image(image: AssetImage('assets/icons/long_sleeve_icon.png')),
-      Image(image: AssetImage('assets/icons/short_sleeve_icon.png'))
-    ];
-
+      Image(image: AssetImage('assets/icons/jumper.png')),
+      Image(image: AssetImage('assets/icons/jumper_cow.png')),
+      Image(image: AssetImage('assets/icons/long_sleeve.png')),
+      Image(image: AssetImage('assets/icons/long_sleeve_sheer.png')),
+      Image(image: AssetImage('assets/icons/short_sleeve.png')),
+      Image(image: AssetImage('assets/icons/short_sleeve_stripe.png'))
+];
 List<Image> get trousersIconList => const [
-      Image(image: AssetImage('assets/icons/trousers_jeans_icon.png')),
-      Image(image: AssetImage('assets/icons/jeans_blue_icon.png')),
-      Image(image: AssetImage('assets/icons/trousers_shorts_icon.png')),
-      Image(image: AssetImage('assets/icons/shorts_black_icon.png')),
-      Image(image: AssetImage('assets/icons/trousers_dungarees_icon.png')),
-    ];
+      Image(image: AssetImage('assets/icons/jeans.png')),
+      Image(image: AssetImage('assets/icons/jeans_blue.png')),
+      Image(image: AssetImage('assets/icons/shorts.png')),
+      Image(image: AssetImage('assets/icons/shorts_black.png')),
+      Image(image: AssetImage('assets/icons/dungarees.png')),
+      Image(image: AssetImage('assets/icons/checked.png')),
+];
 
 List<Image> get shoesIconList => const [
       Image(image: AssetImage('assets/icons/converse.png')),
@@ -71,14 +84,17 @@ List<Image> get shoesIconList => const [
 ];
 
 List<Image> get outerwearIconList => const [
-      Image(image: AssetImage('assets/icons/denim_jacket_icon.png')),
-      Image(image: AssetImage('assets/icons/fur_coat_icon.png')),
-      Image(image: AssetImage('assets/icons/cardigan_icon.png')),
-    ];
-
+      Image(image: AssetImage('assets/icons/denim_jacket.png')),
+      Image(image: AssetImage('assets/icons/fur_coat.png')),
+      Image(image: AssetImage('assets/icons/cardigan.png')),
+      Image(image: AssetImage('assets/icons/cowboy.png')),
+      Image(image: AssetImage('assets/icons/leather.png')),
+];
 Image get baseImage => const Image(image: AssetImage('assets/base.png'));
 
 Image get handImage => const Image(image: AssetImage('assets/hand.png'));
+
+Image get hideSleeves => const Image(image: AssetImage('assets/hide_sleeves.png'));
 
 Image get binder => const Image(image: AssetImage('assets/binder.png'));
 

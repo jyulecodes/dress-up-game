@@ -17,6 +17,10 @@ class OuterwearImage extends StatelessWidget {
               return outerwearList[1];
             case 3:
               return outerwearList[2];
+            case 4:
+              return outerwearList[3];
+            case 5:
+              return outerwearList[4];
             default:
               return Container();
           }

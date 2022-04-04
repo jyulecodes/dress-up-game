@@ -17,7 +17,7 @@ class MainMenu extends StatelessWidget {
         buttonSize: buttonSize,
         onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("underwear");},
         buttonImage: Container(
-          color: Colors.purple,
+          color: buttonPurple,
           child: binderIcon,
         ),
       ),
@@ -25,7 +25,7 @@ class MainMenu extends StatelessWidget {
         buttonSize: buttonSize,
         onPressed:  (){BlocProvider.of<ClothesCubit>(context).openMenu("tops");},
         buttonImage: Container(
-          color: Colors.purple,
+          color: buttonPurple,
           child: topsIconList[0],
         ),
       ),
@@ -33,7 +33,7 @@ class MainMenu extends StatelessWidget {
         buttonSize: buttonSize,
         onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("secondLayer");},
         buttonImage: Container(
-          color: Colors.purple,
+          color: buttonPurple,
           child: secondLayerIconList[0],
         ),
       ),
@@ -41,7 +41,7 @@ class MainMenu extends StatelessWidget {
         buttonSize: buttonSize,
         onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("trousers");},
         buttonImage: Container(
-          color: Colors.purple,
+          color: buttonPurple,
           child: trousersIconList[0],
         ),
       ),
@@ -49,7 +49,7 @@ class MainMenu extends StatelessWidget {
         buttonSize: buttonSize,
         onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("shoes");},
         buttonImage: Container(
-          color: Colors.purple,
+          color: buttonPurple,
           child: shoesIconList[0],
         ),
       ),
@@ -57,7 +57,7 @@ class MainMenu extends StatelessWidget {
         buttonSize: buttonSize,
         onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("outerwear");},
         buttonImage: Container(
-          color: Colors.purple,
+          color: buttonPurple,
           child: outerwearIconList[0],
         ),
       ),

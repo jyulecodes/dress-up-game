@@ -17,6 +17,12 @@ class SecondLayerImage extends StatelessWidget {
               return secondLayerList[1];
             case 3:
               return secondLayerList[2];
+            case 4:
+              return secondLayerList[3];
+            case 5:
+              return secondLayerList[4];
+            case 6:
+              return secondLayerList[5];
             default:
               return Container();
           }

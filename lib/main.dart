@@ -3,6 +3,7 @@ import 'utils/route_generator.dart';
 import 'package:dress_up_game/bloc/clothes/clothes_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 void main() {
   runApp(
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       title: 'Dress Up Game',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        backgroundColor:HexColor('#FFFFFF'),
       ),
       initialRoute: '/game-screen',
       onGenerateRoute: RouteGenerator.generateRoute,

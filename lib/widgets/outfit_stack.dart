@@ -6,6 +6,7 @@ import 'package:dress_up_game/widgets/images/outerwear_image.dart';
 import 'package:dress_up_game/widgets/images/second_layer_image.dart';
 import 'package:dress_up_game/widgets/images/tops_image.dart';
 import 'package:dress_up_game/widgets/images/shoes_image.dart';
+import 'package:dress_up_game/widgets/images/hide_sleeves_image.dart';
 
 class OutfitStack extends StatelessWidget {
   const OutfitStack({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class OutfitStack extends StatelessWidget {
           BinderImage(),
           TopsImage(),
           SecondLayerImage(),
+          HideSleevesImage(),
           ShoesImage(),
           TrouserImage(),
           OuterwearImage(),

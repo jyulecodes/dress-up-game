@@ -21,6 +21,8 @@ class TrouserImage extends StatelessWidget {
               return trousersList[3];
             case 5:
               return trousersList[4];
+            case 6:
+              return trousersList[5];
             default:
               return Container();
           }

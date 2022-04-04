@@ -23,6 +23,8 @@ class TopsImage extends StatelessWidget {
               return topsList[4];
             case 6:
               return topsList[5];
+            case 7:
+              return topsList[6];
             default:
               return Container();
           }

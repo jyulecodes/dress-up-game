@@ -9,18 +9,18 @@ class GameScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: LayoutBuilder(builder: (context, constraints) {
         return Center(
           child: FittedBox(
             fit: BoxFit.contain,
           child: Container(
             height: 750,
-            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            child: Row(children: [
               OutfitStack(),
               MenuController(
                 buttonSize: 750 / 9,
-              ),
-            ]),
+            ), ]),
           ),
         ),
         );

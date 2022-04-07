@@ -15,49 +15,79 @@ class MainMenu extends StatelessWidget {
     return Column(children: [
       MenuButton(
         buttonSize: buttonSize,
-        onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("underwear");},
+        onPressed: () {
+          BlocProvider.of<ClothesCubit>(context).openMenu("underwear");
+        },
         buttonImage: Container(
-          color: buttonPurple,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: buttonPurple,
+          ),
           child: binderIcon,
         ),
       ),
       MenuButton(
         buttonSize: buttonSize,
-        onPressed:  (){BlocProvider.of<ClothesCubit>(context).openMenu("tops");},
+        onPressed: () {
+          BlocProvider.of<ClothesCubit>(context).openMenu("tops");
+        },
         buttonImage: Container(
-          color: buttonPurple,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: buttonPurple,
+          ),
           child: topsIconList[0],
         ),
       ),
       MenuButton(
         buttonSize: buttonSize,
-        onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("secondLayer");},
+        onPressed: () {
+          BlocProvider.of<ClothesCubit>(context).openMenu("secondLayer");
+        },
         buttonImage: Container(
-          color: buttonPurple,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: buttonPurple,
+          ),
           child: secondLayerIconList[0],
         ),
       ),
       MenuButton(
         buttonSize: buttonSize,
-        onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("trousers");},
+        onPressed: () {
+          BlocProvider.of<ClothesCubit>(context).openMenu("trousers");
+        },
         buttonImage: Container(
-          color: buttonPurple,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: buttonPurple,
+          ),
           child: trousersIconList[0],
         ),
       ),
       MenuButton(
         buttonSize: buttonSize,
-        onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("shoes");},
+        onPressed: () {
+          BlocProvider.of<ClothesCubit>(context).openMenu("shoes");
+        },
         buttonImage: Container(
-          color: buttonPurple,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: buttonPurple,
+          ),
           child: shoesIconList[0],
         ),
       ),
       MenuButton(
         buttonSize: buttonSize,
-        onPressed: (){BlocProvider.of<ClothesCubit>(context).openMenu("outerwear");},
+        onPressed: () {
+          BlocProvider.of<ClothesCubit>(context).openMenu("outerwear");
+        },
         buttonImage: Container(
-          color: buttonPurple,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            color: buttonPurple,
+          ),
           child: outerwearIconList[0],
         ),
       ),

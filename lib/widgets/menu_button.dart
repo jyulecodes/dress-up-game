@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:dress_up_game/utils/design_constants.dart';
 
 
-//todo: take in list of assets, make list of buttons
 class MenuButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final Widget? buttonImage;
@@ -17,7 +16,7 @@ class MenuButton extends StatelessWidget {
         width: buttonSize,
         height: buttonSize,
         child: Padding(
-          padding: EdgeInsets.all(smallPadding),
+          padding: EdgeInsets.all(5),
            child: buttonImage!
         ),
       ),

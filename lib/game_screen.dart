@@ -14,15 +14,20 @@ class GameScreen extends StatelessWidget {
         return Center(
           child: FittedBox(
             fit: BoxFit.contain,
-          child: Container(
-            height: 750,
-            child: Row(children: [
-              OutfitStack(),
-              MenuController(
-                buttonSize: 750 / 9,
-            ), ]),
+            child: Container(
+              height: 750,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: const [
+                  OutfitStack(),
+                  MenuController(
+                    buttonSize: 750 / 9,
+                  ),
+                  SizedBox(width: 15,)
+                ],
+              ),
+            ),
           ),
-        ),
         );
       }),
     );

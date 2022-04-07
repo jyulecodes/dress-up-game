@@ -99,3 +99,5 @@ Image get hideSleeves => const Image(image: AssetImage('assets/hide_sleeves.png'
 Image get binder => const Image(image: AssetImage('assets/binder.png'));
 
 Image get binderIcon => const Image(image: AssetImage('assets/icons/binder_icon.png'));
+
+Image get startScreen => const Image(image: AssetImage('assets/start_screen.png'));

@@ -7,28 +7,24 @@ class TopsImage extends StatelessWidget {
   const TopsImage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return BlocBuilder<ClothesCubit, ClothesState>(
-        builder: (BuildContext context, state) {
-          switch (state.selectedItemsList![1]){
-            case 1:
-              return topsList[0];
-            case 2:
-              return topsList[1];
-            case 3:
-              return topsList[2];
-            case 4:
-              return topsList[3];
-            case 5:
-              return topsList[4];
-            case 6:
-              return topsList[5];
-            case 7:
-              return topsList[6];
-            default:
-              return Container();
-          }
+  Widget build(BuildContext context) => BlocBuilder<ClothesCubit, ClothesState>(builder: (BuildContext context, state) {
+        switch (state.selectedItemsList![1]) {
+          case 1:
+            return topsList[0];
+          case 2:
+            return topsList[1];
+          case 3:
+            return topsList[2];
+          case 4:
+            return topsList[3];
+          case 5:
+            return topsList[4];
+          case 6:
+            return topsList[5];
+          case 7:
+            return topsList[6];
+          default:
+            return Container();
         }
-    );
-  }
+      });
 }

@@ -12,7 +12,7 @@ void main() {
         value: ClothesCubit(),
       ),
     ],
-        child: MyApp()
+        child: const MyApp()
     ),
   );
 }

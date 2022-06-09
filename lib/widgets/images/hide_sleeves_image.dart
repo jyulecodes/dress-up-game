@@ -7,14 +7,12 @@ class HideSleevesImage extends StatelessWidget {
   const HideSleevesImage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return BlocBuilder<ClothesCubit, ClothesState>(
-        builder: (BuildContext context, state) {
-          switch (state.selectedItemsList![4]){
-            case 0: return Container();
-            default: return hideSleeves;
-          }
+  Widget build(BuildContext context) => BlocBuilder<ClothesCubit, ClothesState>(builder: (BuildContext context, state) {
+        switch (state.selectedItemsList![4]) {
+          case 0:
+            return Container();
+          default:
+            return hideSleeves;
         }
-    );
-  }
+      });
 }

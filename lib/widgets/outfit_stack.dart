@@ -12,22 +12,15 @@ class OutfitStack extends StatelessWidget {
   const OutfitStack({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return Stack(
-        children: [
-          baseImage,
-          BinderImage(),
-          TopsImage(),
-          SecondLayerImage(),
-          HideSleevesImage(),
-          ShoesImage(),
-          TrouserImage(),
-          OuterwearImage(),
-          handImage
-        ]
-    );
-  }
+  Widget build(BuildContext context) => Stack(children: [
+        baseImage,
+        const BinderImage(),
+        const TopsImage(),
+        const SecondLayerImage(),
+        const HideSleevesImage(),
+        const ShoesImage(),
+        const TrouserImage(),
+        const OuterwearImage(),
+        handImage
+      ]);
 }
-
-//constanly have all images stacked up
-//depending on bloc these will be blank or not

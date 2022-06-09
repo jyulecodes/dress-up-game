@@ -7,26 +7,22 @@ class SecondLayerImage extends StatelessWidget {
   const SecondLayerImage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return BlocBuilder<ClothesCubit, ClothesState>(
-        builder: (BuildContext context, state) {
-          switch (state.selectedItemsList![2]){
-            case 1:
-              return secondLayerList[0];
-            case 2:
-              return secondLayerList[1];
-            case 3:
-              return secondLayerList[2];
-            case 4:
-              return secondLayerList[3];
-            case 5:
-              return secondLayerList[4];
-            case 6:
-              return secondLayerList[5];
-            default:
-              return Container();
-          }
+  Widget build(BuildContext context) => BlocBuilder<ClothesCubit, ClothesState>(builder: (BuildContext context, state) {
+        switch (state.selectedItemsList![2]) {
+          case 1:
+            return secondLayerList[0];
+          case 2:
+            return secondLayerList[1];
+          case 3:
+            return secondLayerList[2];
+          case 4:
+            return secondLayerList[3];
+          case 5:
+            return secondLayerList[4];
+          case 6:
+            return secondLayerList[5];
+          default:
+            return Container();
         }
-    );
-  }
+      });
 }

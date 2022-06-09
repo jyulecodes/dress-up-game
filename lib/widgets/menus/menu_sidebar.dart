@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dress_up_game/bloc/clothes/clothes_cubit.dart';
 import 'package:dress_up_game/utils/design_constants.dart';
 
-//todo: make menu template
 class MenuSidebar extends StatelessWidget {
   final double? buttonSize;
   final int? menuNumber;
@@ -26,10 +25,10 @@ class MenuSidebar extends StatelessWidget {
       buttonSize: buttonSize,
       buttonImage: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          borderRadius: const BorderRadius.all(Radius.circular(10.0)),
           color: buttonAccent,
         ),
-        child: Icon(
+        child: const Icon(
           Icons.not_interested,
           size: 40,
           color: Colors.white,
@@ -46,7 +45,7 @@ class MenuSidebar extends StatelessWidget {
         buttonSize: buttonSize,
         buttonImage: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             color: buttonPurple,
           ),
           child: menuIcons![i],
@@ -63,7 +62,7 @@ class MenuSidebar extends StatelessWidget {
             BlocProvider.of<ClothesCubit>(context).openMenu("main");
           },
           buttonSize: buttonSize,
-          buttonImage: Container(child: Icon(Icons.arrow_forward_ios)),
+          buttonImage: const Icon(Icons.arrow_forward_ios),
         ));
       }
     }

@@ -20,7 +20,7 @@ class MainMenu extends StatelessWidget {
         },
         buttonImage: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             color: buttonPurple,
           ),
           child: binderIcon,
@@ -33,7 +33,7 @@ class MainMenu extends StatelessWidget {
         },
         buttonImage: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             color: buttonPurple,
           ),
           child: topsIconList[0],
@@ -46,7 +46,7 @@ class MainMenu extends StatelessWidget {
         },
         buttonImage: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             color: buttonPurple,
           ),
           child: secondLayerIconList[0],
@@ -59,7 +59,7 @@ class MainMenu extends StatelessWidget {
         },
         buttonImage: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             color: buttonPurple,
           ),
           child: trousersIconList[0],
@@ -72,7 +72,7 @@ class MainMenu extends StatelessWidget {
         },
         buttonImage: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             color: buttonPurple,
           ),
           child: shoesIconList[0],
@@ -85,7 +85,7 @@ class MainMenu extends StatelessWidget {
         },
         buttonImage: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             color: buttonPurple,
           ),
           child: outerwearIconList[0],

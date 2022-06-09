@@ -7,16 +7,12 @@ class BinderImage extends StatelessWidget {
   const BinderImage({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return BlocBuilder<ClothesCubit, ClothesState>(
-        builder: (BuildContext context, state) {
-          switch (state.selectedItemsList![0]){
-            case 1:
-              return binder;
-            default:
-              return Container();
-          }
-          }
-    );
-  }
+  Widget build(BuildContext context) => BlocBuilder<ClothesCubit, ClothesState>(builder: (BuildContext context, state) {
+        switch (state.selectedItemsList![0]) {
+          case 1:
+            return binder;
+          default:
+            return Container();
+        }
+      });
 }

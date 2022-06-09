@@ -13,7 +13,7 @@ class ClothesState extends Equatable {
     List<int>? selectedItemsList
   }) {
     return ClothesState(
-      currentMenu: selectedMenu ?? this.currentMenu,
+      currentMenu: selectedMenu ?? currentMenu,
         selectedItemsList: selectedItemsList ?? this.selectedItemsList
     );
   }
